@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "io.github.scola.qart"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 14
+        versionName "2.3"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    aaptOptions {
+        cruncherEnabled false
+    }
+
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            signingConfig signingConfigs.release
+//            zipAlignEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+
+    applicationVariants.all { variant ->
+
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = outputFile.name.replace("app", "Qart").replace(".apk", "-${defaultConfig.versionName}.apk")
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile(name: 'colorpicker', ext: 'aar')
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'com.journeyapps:zxing-android-embedded:3.3.0'
+    compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
+    compile 'com.aurelhubert:ahbottomnavigation:1.5.1'
+    compile project(':cropper')
+    compile project(':onboarder')
+}

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Qart</string>
+
+    <string name="gallery">Gallery</string>
+    <string name="action_more">More</string>
+    <string name="convert">Convert</string>
+    <string name="add_text">Text</string>
+    <string name="save">Save</string>
+    <string name="share">Share</string>
+    <string name="revert">Revert</string>
+    <string name="about">About</string>Share
+    <string name="cancel_scan">Scan cancelled</string>
+    <string name="share_via">Share via</string>
+    <string name="back_to_exit">Please press back key again to exit</string>
+    <string name="default_qr_text">Please input your own text to generate QR code, or press QR code button on the right</string>
+    <string name="saved">Saved in&#160;</string>
+    <string name="about_page">file:///android_asset/pages/about-en.html</string>
+    <string name="about_info_title">Qart %s</string>
+    <string name="about_info_share"></string>
+    <string name="share_content">Qart is used to generate QR code that merge a picture. So the QR code looks more beautiful. Please try it https://play.google.com/store/apps/details?id=io.github.scola.qart</string>
+    <string name="share_subject">Invite to use Qart app</string>
+    <string name="share_channel">Share via</string>
+    <string name="about_info_close">Close</string>
+    <string name="converting">Converting QR code, please wait several second</string>
+    <string name="choose_color">Choose color</string>
+    <string name="color_or_black">BLACKWHITE or COLORFUL</string>
+    <string name="colorful_msg">Qart can generate blackwhite or colorful QR Code. Please select proper color for higher recognition rate. If the selected color brightness is too light or similar with selected picture, the QR code may not be detected</string>
+    <string name="black_white">BLACKWHITE</string>
+    <string name="colorful">COLORFUL</string>
+    <string name="select_white">You selected white color, generated QR code cannot be detected</string>
+    <string name="select_light">You selected color is too light, generated QR code may not be detected</string>
+    <string name="select_mode">Mode</string>
+    <string name="select_mode_title">Select one mode</string>
+    <string name="normal_mode">Normal</string>
+    <string name="picture_mode">Picture</string>
+    <string name="logo_mode">Logo</string>
+    <string name="embed_mode">Embed</string>
+    <string name="change_color">Color</string>
+    <string name="gif">GIF</string>
+    <string name="embed_title">EMBED</string>
+    <string name="logo_title">LOGO</string>
+    <string name="guide_start">START</string>
+    <string name="gif_picture_only">Only picture mode support GIF</string>
+    <string name="qr_result">QR Result</string>
+    <string name="open">Open</string>
+    <string name="copy">Copy</string>
+    <string name="import_text">Import</string>
+    <string name="qr_copied">QR text has been copied</string>
+    <string name="no_activity">Can not find activity to open</string>
+    <string name="scan">Scan</string>
+    <string name="scan_qr">Scan QR Code</string>
+    <string name="read_qr">Read QR Image</string>
+    <string name="cannot_detect_qr">Can not decode image</string>
+    <string name="scan_or_read">Scan or read QR code</string>
+    <string name="detect">Detect</string>
+    <string name="send">Send</string>
+    <string name="text_too_long">Text is too long. Please input shorter text</string>
+
+</resources>
